@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-effect {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .card-img-container {
+    clip-path: polygon(0 0, 100% 0, 100% 62%, 51% 100%, 0 61%);  
+  }
+
+  .circle {
+    @apply w-3 h-3 bg-white rounded-full shadow-inner shadow-slate-400
+  }
+}
