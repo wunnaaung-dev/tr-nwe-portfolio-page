@@ -3,11 +3,11 @@ import ClassCard from "./ClassCard";
 
 const Class = () => {
   return (
-    <section id="classes">
+    <section id="classes" className="mt-4">
       <h1 className="text-5xl text-center md:text-6xl lg:text-7xl text-[#FFC94A] font-bold">
         Classes
       </h1>
-      <p className="w-full md:w-1/2 text-center mx-auto">
+      <p className="w-full md:w-1/2 text-center mx-auto mt-2">
         Choose how you want to learn:{" "}
         <span className="text-green-400 italic font-semibold">online</span> or{" "}
         <span className="text-green-400 italic font-semibold">in-person</span>.

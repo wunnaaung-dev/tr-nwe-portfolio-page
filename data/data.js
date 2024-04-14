@@ -18,27 +18,27 @@ export const about_us_data = [
 export const classes = [
   {
     id: 1,
-    classification: "IGCSE",
-    level: "O level",
-    subjects: ["Physics,", "Chemistry,", "Biology"],
+    classification: "IGCSE O Level",
+    level: "CIE & Edexcel",
+    subjects: ["Physics,", "Chemistry,", "Biology,", "Human Biology"  ],
   },
   {
     id: 2,
-    classification: "IGCSE",
-    level: "A level",
-    subjects: ["Physics,", "Chemistry,", "Biology"],
+    classification: "IGCSE A Level",
+    level: "CIE & Edexcel",
+    subjects: ["Chemistry,", "Biology"],
   },
   {
     id: 3,
-    classification: "Primary & Secondary School",
-    level: "Year 7, Year 8",
-    subjects: ["English,", "Maths"],
+    classification: "Primary Classes",
+    level: "Year 6, 7",
+    subjects: ["English,", "Maths,", "Science"],
   },
   {
     id: 4,
-    classification: "Biomedical Science",
-    level: "O level, A level",
-    subjects: ["Biology,", "Human Biology"],
+    classification: "Secondary Classes",
+    level: "Year 8",
+    subjects: ["English,", "Maths,", "Physics,", "Chemistry,", "Biology" ],
   },
 ];
 

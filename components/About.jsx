@@ -5,23 +5,63 @@ const About = () => {
   return (
     <section className="mt-5 bg-[#a491d3] py-8 relative" id="about">
       <h1 className="text-center text-5xl md:text-6xl lg:text-7xl text-[#FFC94A] font-bold">
-        About
+        About Me
       </h1>
-      <h2 className="font-semibold text-center text-md md:text-2xl text-[#453F78]">
-        Tr. Nwe
-      </h2>
-      <div className="flex justify-center items-center gap-5 mt-3 text-justify indent-5 w-full md:w-3/4 mx-auto">
-        {about_us_data.map((data) => (
-          <Card
-            key={data.id}
-            title={data.title}
-            imgSrc={data.imgSrc}
-            description={data.description}
-          />
-        ))}
+      <div className="flex flex-col gap-3 justify-center mt-6 md:flex-row indent-5 w-full md:w-3/4 mx-auto">
+        <Card
+          title="Dr.Thet Thet Nwe"
+          imgSrc="/Tr-Nwe-About.jpg"
+          description="Founder and CEO of Tr.Nwe IGCSE Class"
+        />
+        <div className="px-2">
+          <div className="bg-white shadow-lg py-3 pe-2 rounded-lg h-fit">
+            <h3 className="font-bold text-center text-lg">Education</h3>
+            <ul className="list-disc list-inside text-sm text-slate-600 mt-2 leading-8">
+              <li>
+                <span className="font-bold underline">M.B.B.S</span> (University
+                of Medicine 2, 2009)
+              </li>
+              <li>
+                <span className="font-bold underline">M.Med.Sc</span>{" "}
+                (Biochemistry, University of Medicine 2, 2009)
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white shadow-lg py-3 pe-2 rounded-lg h-fit mt-1">
+            <h3 className="text-center font-bold text-lg">
+              Working Experience
+            </h3>
+            <ul className="list-disc list-inside text-sm text-slate-600 mt-2 leading-8">
+              <li className="font-bold">
+                2003 - 2019
+                <p className="text-wrap ms-9 font-normal">
+                  Teacher for Government High school students <span className="font-semibold italic">(Grade 10, 11, 12)</span>{" "}
+                </p>
+              </li>
+              <li className="font-bold">
+                2016 - 2019
+                <p className="text-wrap ms-9 font-normal">
+                  Demonstrator, Department of Biochemistry, <span className="font-semibold italic">(University of
+                  Medicine 2,Yangon)</span> 
+                </p>
+              </li>
+              <li className="font-bold">
+                2019
+                <p className="text-wrap ms-9 font-normal">
+                  Assistant Lecturer, Department of Biochemistry,<span className="font-semibold italic">(University of
+                  Medicine 2, Yangon{" "})</span> 
+                </p>
+              </li>
+              <li className="font-bold">
+                2020 - Now
+                <p className="text-wrap ms-9 font-normal">
+                  Teaching <span className="font-semibold">Biomedical Science</span> for Poland Medical Students
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <BulbSVG position="top-0 left-3" />
-      <BulbSVG position="top-0 right-3" />
     </section>
   );
 };
