@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Achievements from "@/components/Achievements";
 import Class from "@/components/Class";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -13,6 +14,7 @@ export default function Home() {
         <About />
         <Class />
         <Outstanding />
+        <Achievements />
         <Contact />
         <Footer />
       </div>
