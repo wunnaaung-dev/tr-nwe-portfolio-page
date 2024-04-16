@@ -7,7 +7,7 @@ import UseInView from "./UseInView";
 import Heading from "./Heading";
 const About = () => {
   return (
-    <section className="mt-5 bg-[#a491d3] py-8 relative" id="about">
+    <section className="mt-5 bg-[#333333] py-8 relative" id="about">
       <UseInView>
         <Heading>About Me</Heading>
         <div className="flex flex-col px-1 gap-3 justify-center mt-6 md:flex-row indent-5 w-full md:w-3/4 mx-auto">

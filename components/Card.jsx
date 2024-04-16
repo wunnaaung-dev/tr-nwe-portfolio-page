@@ -7,7 +7,7 @@ const Card = ({ title, imgSrc, description }) => {
         <Image className="rounded-lg" src={imgSrc} alt="img" width={400} height={800} />
       </div>
       <h3 className="text-center text-xl text-[#171d1c] font-bold mt-4">{title}</h3>
-      <p className="w-full text-sm px-3 text-slate-600 italic mt-2">{description}</p>
+      <p className="w-full text-center text-sm px-3 text-slate-600 italic mt-2">{description}</p>
     </div>
   );
 };
