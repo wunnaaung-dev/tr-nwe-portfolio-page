@@ -1,26 +1,39 @@
+"use client";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-
+import { motion } from "framer-motion";
+import BlinkingButton from "./BlinkingButton";
 const poppins = Poppins({ weight: ["400", "600"], subsets: ["latin"] });
 
 const Hero = () => {
   return (
     <section className=" mt-14" id="Home">
-      <div className="flex flex-col justify-center items-center relative">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col justify-center items-center relative"
+      >
         <div className="relative">
           <h1
             className={`${poppins.className} text-center z-30 text-5xl md:text-6xl lg:text-7xl text-[#FFC94A] font-bold`}
           >
             Boost Exam Grades :)
           </h1>
-          <Image
-            className="absolute -top-16 rotate-12 right-0 -z-20"
-            src="/Exam.png"
-            alt="exam"
-            width={200}
-            height={300}
-          />
+          <motion.div
+            initial={{ opacity: 0, x: 200, y: -120, rotate: 38 }}
+            animate={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
+            transition={{duration: 0.8, delay: 0.2, ease: "linear"}}
+          >
+            <Image
+              className="absolute -top-16 rotate-12 right-0 -z-20"
+              src="/Exam.png"
+              alt="exam"
+              width={200}
+              height={300}
+            />
+          </motion.div>
         </div>
         <h2
           className={`${poppins.className} font-semibold text-md md:text-2xl text-[#453F78]`}
@@ -38,18 +51,14 @@ const Hero = () => {
           </p>
         </div>
         <Link href="https://www.facebook.com/DrThetThetNwe" target="new">
-          <button className="bg-[#FFC94A] rounded-full shadow-md px-6 py-3 mt-3">
-            Join Now
-          </button>
+          <BlinkingButton />
         </Link>
-      </div>
+      </motion.div>
       <div className="flex justify-center items-center mt-5">
         <Image src="/hero.jpg" alt="tr-nwe-img" width={400} height={500} />
       </div>
     </section>
   );
 };
-
-
 
 export default Hero;

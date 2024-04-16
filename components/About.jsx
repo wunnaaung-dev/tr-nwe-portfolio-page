@@ -7,7 +7,7 @@ const About = () => {
       <h1 className="text-center text-5xl md:text-6xl lg:text-7xl text-[#FFC94A] font-bold">
         About Me
       </h1>
-      <div className="flex flex-col gap-3 justify-center mt-6 md:flex-row indent-5 w-full md:w-3/4 mx-auto">
+      <div className="flex flex-col px-1 gap-3 justify-center mt-6 md:flex-row indent-5 w-full md:w-3/4 mx-auto">
         <Card
           title="Dr.Thet Thet Nwe"
           imgSrc="/Tr-Nwe-About.jpg"
