@@ -20,7 +20,7 @@ export const classes = [
     id: 1,
     classification: "IGCSE O Level",
     level: "CIE & Edexcel",
-    subjects: ["Physics,", "Chemistry,", "Biology,", "Human Biology"  ],
+    subjects: ["Physics,", "Chemistry,", "Biology,", "Human Biology"],
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ export const classes = [
     id: 4,
     classification: "Secondary Classes",
     level: "Year 8",
-    subjects: ["English,", "Maths,", "Physics,", "Chemistry,", "Biology" ],
+    subjects: ["English,", "Maths,", "Physics,", "Chemistry,", "Biology"],
   },
 ];
 
@@ -54,7 +54,7 @@ export const contacts = [
     details: "09756278294"
   },
   {
-    id: 3, 
+    id: 3,
     title: "Email",
     details: "thetthetngwe@gmail.com"
   }
@@ -125,4 +125,45 @@ export const nav_links = [
     text: "Contact Me",
     link: "#contact"
   },
+]
+
+export const education_histories = [
+  {
+    id: 1,
+    degree: "M.B.B.S",
+    university: "(University of Medicine 2, 2009)"
+  },
+  {
+    id: 2,
+    degree: "M.Med.Sc",
+    university: "(Biochemistry, University of Medicine 2, 2009)"
+  },
+]
+
+export const experiences = [
+  {
+    id: 1,
+    year: "2003 - 2019",
+    careerer: "Teacher for Government High school students",
+    type: "(Grade 10, 11, 12)"
+  },
+  {
+    id: 2,
+    year: "2016 - 2019",
+    careerer: "Demonstrator, Department of Biochemistry,",
+    type: "(University of Medicine 2,Yangon)"
+  },
+  {
+    id: 3,
+    year: "2019",
+    careerer: "Assistant Lecturer, Department of Biochemistry,",
+    type: "(University of Medicine 2,Yangon)"
+  },
+  {
+    id: 4,
+    year: "2020 - Now",
+    careerer: "Teaching for Poland Medical Students",
+    type: "(Biomedical Science)"
+  },
+
 ]

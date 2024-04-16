@@ -18,13 +18,12 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import { outstanding_students } from "@/data/data";
 import Students from "./Students";
+import Heading from "./Heading";
 const Outstanding = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <section className="my-8" id="testimonials">
-      <h1 className="text-center text-5xl md:text-6xl lg:text-7xl text-[#FFC94A] font-bold">
-        My Outstanding Students
-      </h1>
+    <section className=" my-10" id="testimonials">
+      <Heading>My Outstanding Students</Heading>
       <p className="w-full md:w-1/2 text-center mx-auto my-2">
         Your dedication and hard work have not gone <span className="text-red-500">unnoticed</span>. It is my greate
         pleasure to reward the outstanding students in the exams.

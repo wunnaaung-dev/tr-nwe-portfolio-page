@@ -9,6 +9,7 @@ import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards, Autoplay } from "swiper/modules";
 import Image from "next/image";
+import Heading from "./Heading";
 const imageSources = [
   "/achievements/Ach1.jpg",
   "/achievements/Ach2.jpg",
@@ -25,14 +26,12 @@ const imageSources = [
 const Achievements = () => {
   return (
     <section>
-      <h1 className="text-5xl text-center md:text-6xl lg:text-7xl text-[#FFC94A] font-bold">
-        Achievements
-      </h1>
+      <Heading>Achievements</Heading>
       <Swiper
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="my-5 bg-none w-[300px] flex justify-center items-center border border-yellow-400 p-2"
+        className="my-5 bg-none w-[300px] flex justify-center items-center  p-2"
       >
         {imageSources.map((src, index) => (
           <SwiperSlide key={index}>
