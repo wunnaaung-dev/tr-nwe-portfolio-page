@@ -52,7 +52,7 @@ const About = () => {
                     viewport={{
                       once: true,
                     }}
-                    custom={history.id}
+                    custom={index}
                     key={index}
                     className="font-bold"
                   >
